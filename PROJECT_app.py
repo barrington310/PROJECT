@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 
 # Load the trained model
-model = joblib.load("best_model.joblib")
+model = joblib.load("model.joblib")
 
 # Define the Streamlit app
 def main():
