@@ -13,6 +13,11 @@ def main():
     text = st.text_input("Text")
 
     # Preprocess the text (similar to the preprocessing done during training)
+    def preprocess_text(text):
+    # Perform preprocessing steps on the text
+    # ...
+    # Return the preprocessed text
+    return preprocessed_text
     preprocessed_text = preprocess_text(text)
 
     # Make a prediction
