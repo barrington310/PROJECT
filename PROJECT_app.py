@@ -3,6 +3,13 @@ import joblib
 
 # Load the trained model
 model = '/content/drive/MyDrive/Colab Notebooks/model.joblib'
+# Define the preprocess_text function
+def preprocess_text(text):
+    # Perform preprocessing steps on the text
+    preprocessed_text = text.lower()  # Example preprocessing step: convert to lowercase
+
+    # Return the preprocessed text
+    return preprocessed_text
 # Define the Streamlit app
 def main():
     st.title("Sentiment Analysis")
