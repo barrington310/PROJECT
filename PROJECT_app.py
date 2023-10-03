@@ -1,7 +1,8 @@
+!pip install streamlit
 import streamlit as st
 import joblib
 
-# Load the trained model
+# Load the trained model+
 model = '/content/drive/MyDrive/Colab Notebooks/model.joblib'
 
 # Define the Streamlit app
@@ -12,14 +13,7 @@ def main():
     # User input text
     text = st.text_input("Text")
 
-  
     # Preprocess the text (similar to the preprocessing done during training)
- def preprocess_text(text):
-    # Perform preprocessing steps on the text
-    preprocessed_text = text.lower()  # Example preprocessing step: convert to lowercase
-
-    # Return the preprocessed text
-    return preprocessed_text
     preprocessed_text = preprocess_text(text)
 
     # Make a prediction
@@ -34,3 +28,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+  
