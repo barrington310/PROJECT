@@ -2,7 +2,6 @@
 !pip install google-colab
 
 import streamlit as st
-import pickle
 from google.colab import drive
 
 # Mount Google Drive
