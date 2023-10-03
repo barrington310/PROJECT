@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 
 # Load the trained model
-model = joblib.load('/content/drive/MyDrive/Colab Notebooks/model.joblib')
+model = joblib.load('model.joblib')
 # Define the preprocess_text function
 def preprocess_text(text):
     # Perform preprocessing steps on the text
