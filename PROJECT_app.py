@@ -1,5 +1,10 @@
+!pip install streamlit google-colab
 import streamlit as st
 import pickle
+from google.colab import drive
+
+# Mount Google Drive
+drive.mount('/content/drive')
 
 # Load the saved model
 with open('/content/drive/MyDrive/Colab Notebooks/model.pkl', 'rb') as f:
@@ -37,6 +42,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+   
+
+            
+            
    
 
 
