@@ -1,9 +1,8 @@
 import streamlit as st
 import joblib
 
-# Load the trained model+
-model = '/content/drive/MyDrive/Colab Notebooks/model.joblib'
-
+# Load the trained model
+model = joblib.load('/content/drive/MyDrive/Colab Notebooks/model.joblib')
 # Define the Streamlit app
 def main():
     st.title("Sentiment Analysis")
