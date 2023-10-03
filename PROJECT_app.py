@@ -1,4 +1,5 @@
-!pip install streamlit google-colab
+!pip install streamlit
+!pip install google-colab
 
 import streamlit as st
 import pickle
