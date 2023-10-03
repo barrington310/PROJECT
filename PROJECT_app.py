@@ -1,16 +1,19 @@
 import streamlit as st
-import joblib
+import pickle
 
-# Load the trained model
-model = joblib.load('model.joblib')
-# Define the preprocess_text function
-def preprocess_text(text):
-    # Perform preprocessing steps on the text
-    preprocessed_text = text.lower()  # Example preprocessing step: convert to lowercase
+# Load the saved model
+with open('/content/drive/MyDrive/Colab Notebooks/model.pkl', 'rb') as f:
+    best_model = pickle.load(f)
 
-    # Return the preprocessed text
-    return preprocessed_text
-# Define the Streamlit app
+# Example new texts
+new_texts = [
+    "I love this product! It exceeded my expectations.",
+    "The customer service was terrible. I would not recommend this company.",
+    "This movie was just average. Nothing special.",
+    "The quality of the product is really poor."
+]
+
+# Streamlit app
 def main():
     st.title("Sentiment Analysis")
     st.write("Enter a text to predict its sentiment:")
@@ -18,20 +21,23 @@ def main():
     # User input text
     text = st.text_input("Text")
 
-    # Preprocess the text (similar to the preprocessing done during training)
-    preprocessed_text = preprocess_text(text)
-
-    # Make a prediction
+    # Make a prediction when the user submits the input
     if st.button("Predict"):
-        prediction = model.predict([preprocessed_text])[0]
+        if text:
+            # Use the model to predict sentiment on the user input
+            prediction = best_model.predict([text])[0]
 
-        # Display the predicted sentiment
-        if prediction == 1:
-            st.write("Sentiment: Positive")
+            # Display the predicted sentiment
+            if prediction == 1:
+                st.write("Sentiment: Positive")
+            else:
+                st.write("Sentiment: Negative")
         else:
-            st.write("Sentiment: Negative")
+            st.write("Please enter a text.")
 
 if __name__ == "__main__":
     main()
+   
 
-  
+
+       
