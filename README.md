@@ -9,4 +9,8 @@ Granted Streamlit access to the GitHub repository where my Streamlit app code is
 Deployed my app:
 On the Streamlit sharing website, I clicked the "New app" button and selected my GitHub repository from the list of available repositories.
 Streamlit  initiated the deployment process, which involved cloning my GitHub repository and setting up a server to host the app.
-Streamlit  provided  a public URL where my  app is accessible.
+## My Streamlit App
+Check out my Streamlit app deployed on Streamlit Cloud: [App URL](https://project-lhsst29p8asonrct2w4pkx.streamlit.app/~/+/#sentiment-analysis).
+```
+
+
