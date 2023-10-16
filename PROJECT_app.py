@@ -1,4 +1,5 @@
 import streamlit as st
+import pickle
 # Load the saved model
 with open('model.pkl', 'rb') as f:
     best_model = pickle.load(f)
