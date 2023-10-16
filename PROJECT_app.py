@@ -1,9 +1,4 @@
 import streamlit as st
-
-
-# Mount Google Drive
-drive.mount('/content/drive')
-
 # Load the saved model
 with open('/content/drive/MyDrive/Colab Notebooks/model.pkl', 'rb') as f:
     best_model = pickle.load(f)
