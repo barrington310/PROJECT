@@ -1,6 +1,3 @@
-!pip install streamlit
-!pip install google-colab
-
 import streamlit as st
 from google.colab import drive
 
