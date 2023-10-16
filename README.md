@@ -13,6 +13,7 @@ Streamlit  initiated the deployment process, which involved cloning my GitHub re
 Check out my Streamlit app deployed on Streamlit Cloud: [App URL](https://project-lhsst29p8asonrct2w4pkx.streamlit.app/~/+/#sentiment-analysis).
 ```
 
-[Watch the video](PROJECT/WhatsApp Video 2023-10-16 at 20.05.25.mp4)
+[watch Video]([https://www.youtube.com/watch?v=YOUR_VIDEO_ID](https://youtube.com/shorts/dOLDWimxZ-c?feature=share))
 ```
+
 
