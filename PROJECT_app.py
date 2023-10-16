@@ -1,6 +1,6 @@
 import streamlit as st
 # Load the saved model
-with open('/content/drive/MyDrive/Colab Notebooks/model.pkl', 'rb') as f:
+with open('model.pkl', 'rb') as f:
     best_model = pickle.load(f)
 
 # Example new texts
